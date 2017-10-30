@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="src/gifplayer.js"></script>
+        <script src="assets/js/jquery.threesixty.js"></script>
+                
+        <link rel="stylesheet" href="../dist/gifplayer.css" />
+        <link rel="icon" type="image/png" href="media/banana.png" />
+        <script>
+            $(document).ready(function () {
+                
+                $('.gifplayer').gifplayer();
+                $('.threesixty').threeSixty({
+                    dragDirection: 'horizontal',
+                    useKeys: false
+                });
+                
+           
+
+            });
+        </script>
+    </head>
+    <body>
+        <div class="threesixty" data-path="assets/img/src/gem{index}.jpg" data-count="61"></div>
+        <div><h2>Video mode:</h2>
+
+            <img class="gifplayer" src="media/banana.png"
+                 data-mode="video"
+                 data-webm="media/banana.webm"
+                 data-mp4="media/banana.mp4" />
+            
+            <script>
+<ins class="play-gif" style="top: 155px; left: 157.5px;">GIF</ins>;
+            </script></div>
+    </body>
+</html>
