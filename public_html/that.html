@@ -12,19 +12,25 @@ and open the template in the editor.
         <script src="assets/js/jquery.min.js"></script>
         <script src="src/gifplayer.js"></script>
         <script src="assets/js/jquery.threesixty.js"></script>
-                
+        <script src="assets/jquery.pointpoint/transform.js"></script>
+        <script src="assets/jquery.pointpoint/jquery.pointpoint.js"></script>
+
+        <script src="assets/js/script.js"></script>
+<link rel="stylesheet" href="assets/css/styles.css" />
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lobster+Two" />
+        <link rel="stylesheet" href="assets/jquery.pointpoint/jquery.pointpoint.css" />
         <link rel="stylesheet" href="../dist/gifplayer.css" />
         <link rel="icon" type="image/png" href="media/banana.png" />
         <script>
             $(document).ready(function () {
-                
+
                 $('.gifplayer').gifplayer();
                 $('.threesixty').threeSixty({
                     dragDirection: 'horizontal',
                     useKeys: false
                 });
-                
-           
+
+
 
             });
         </script>
@@ -37,9 +43,13 @@ and open the template in the editor.
                  data-mode="video"
                  data-webm="media/banana.webm"
                  data-mp4="media/banana.mp4" />
-            
+
             <script>
-<ins class="play-gif" style="top: 155px; left: 157.5px;">GIF</ins>;
+                <ins class="play-gif" style="top: 155px; left: 157.5px;">GIF</ins>;
             </script></div>
+        <div id="buttonContainer">
+			<a href="#" class="redButton" id="push">Push!</a>
+		</div>
+		
     </body>
 </html>
